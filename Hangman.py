@@ -99,7 +99,7 @@ while allowed_guesses > 0:
             break
     if all(letter.lower() in guess for letter in words):
         done = True
-    
+        break
 draw_words(words.lower())
 draw_lines(len(words.lower()))
 
